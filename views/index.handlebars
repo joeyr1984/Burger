@@ -1,0 +1,46 @@
+<main class="conatiner-fluid">
+    <div class="row">
+        <!--side piece-->
+        <aside id="sideOption" class="col-md-4 col-lg-2">
+            <img src="./LOGO.svg" alt="burgerblog logo" class="logo">
+            <form>
+                <div class="input-group mb-3 search-width" id="input-button">
+                    <input type="text" class="form-control" aria-label="burger submission"
+                        aria-describedby="submit-button" id="submit-burger">
+                    <div class="input-group-append">
+                        <button class="btn" type="submit" id="submit-button">Submit</button>
+                    </div>
+                </div>
+            </form>
+            <div>
+                <ul>
+                    {{#each burgers}}
+                    {{#unless devoured}}
+                    {{> burgers/burger-block devoured=false}}
+                    {{/unless}}
+                    {{/each}}
+                </ul>
+            </div>
+        </aside>
+        <!--main area-->
+        <section class="col-md-8" id="devour-area">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>devoured.</h1>
+                    <div class="eaten">
+                        <ul>
+                            {{#each burgers}}
+                            {{#unless devoured}}
+                            {{> burgers/devoured devoured=true}}
+                            {{/unless}}
+                            {{/each}}
+                        </ul>
+
+                    </div>
+                    <img src="./HERO-BURGER.svg" alt="picture of a burger and fries" class="img-fluid w-75">
+                </div>
+            </div>
+        </section>
+    </div>
+
+</main>

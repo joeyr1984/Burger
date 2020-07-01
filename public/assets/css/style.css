@@ -1,0 +1,57 @@
+body {
+    font-family: fenwick, sans-serif;
+    font-weight: 400;
+}
+.logo {
+    padding: 30px;
+    width: 270px;
+}
+#submit-burger {
+    padding: 20px;
+    margin-left: 30px;
+    background-color: black;
+    color: #DA242A;
+    
+}
+#submit-button {
+    color: #E8DEB1;
+    background-color: #DA242A;
+    font-family: fenwick, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#input-button {
+    width: 240px;
+}
+#devour-area {
+    margin-top: 60px;
+    padding-left: 30px;
+}
+h1 {
+    color: #DA242A;
+    font-family: fenwick, sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    letter-spacing: -3px;
+}
+.devour-buttons{
+    color: #E8DEB1;
+    background-color: #DA242A;
+    font-family: fenwick, sans-serif;
+    font-weight: 400;
+}
+li {
+    list-style-type: none;
+    margin-left: -5px;
+    font-family: fenwick, sans-serif;
+    font-weight: 400;
+}
+.devoured-list {
+    text-transform: uppercase;
+}
+.eaten{
+        height: 150px;
+        overflow-y: scroll;
+        background-color: #f8f9fa ;
+        padding: 5px;
+}
