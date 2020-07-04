@@ -3,7 +3,7 @@
         <!--side piece-->
         <aside id="sideOption" class="col-md-4 col-lg-2">
             <img src="/assets/images/LOGO.svg" alt="burgerblog logo" class="logo">
-            <form>
+            <form id="burgerForm">
                 <div class="input-group mb-3 search-width" id="input-button">
                     <input type="text" class="form-control" aria-label="burger submission"
                         aria-describedby="submit-button" id="submit-burger">
@@ -16,7 +16,7 @@
                 <ul>
                     {{#each burgers}}
                     {{#unless devoured}}
-                    {{> burger-block devoured=false}}
+                    {{> burger-block}}
                     {{/unless}}
                     {{/each}}
                 </ul>
@@ -31,7 +31,7 @@
                         <ul>
                             {{#each burgers}}
                             {{#if devoured}}
-                            {{> devoured devoured=true}}
+                            {{> devoured}}
                             {{/if}}
                             {{/each}}
                         </ul>
