@@ -1,13 +1,8 @@
 $(function () {
-  console.log("HELLO");
-  
+
   $(".devour-buttons").on("click", function (event) {
     const id = $(this).data("id");
- 
-    console.log(id);
-
-
-    const newDevouredState = {
+     const newDevouredState = {
       devoured: 1
     };
 
@@ -24,7 +19,6 @@ $(function () {
   });
 
   $("#submit-button").on("click", function (event) {
-    // Make sure to preventDefault on a submit event.
     event.preventDefault();
 console.log("hello");
 
@@ -32,8 +26,6 @@ console.log("hello");
       name: $("#submit-burger").val().trim(),
       devoured: 0
     };
-    console.log(newBurger);
-
     // Send the POST request.
     $.ajax("/api/burgers", {
       type: "POST",

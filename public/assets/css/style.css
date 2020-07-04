@@ -34,14 +34,25 @@ h1 {
     font-style: normal; 
     letter-spacing: -3px;
 }
-.devour-buttons{
+.devour-buttons, .devour-buttons:link, .devour-buttons:visited, .devour-buttons:hover, .devour-buttons:active {
     color: #E8DEB1;
     background-color: #DA242A;
     font-family: fenwick, sans-serif;
     font-weight: 400;
+    border-radius: 0px;
+    height: 40px;
+    padding: 6px;
+    width: 82px;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column wrap;
+    height: 200px;
 }
 li {
-    list-style-type: none;
+    
     margin-left: -5px;
     font-family: fenwick, sans-serif;
     font-weight: 400;
